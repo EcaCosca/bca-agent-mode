@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "products": "Products",
+    "categories": "Categories",
+    "education": "Education",
+    "about": "About",
+    "cart": "Cart"
+  },
+  "hero": {
+    "tagline": "The most trusted name in backcountry safety.",
+    "cta_primary": "View Products",
+    "cta_secondary": "Learn more"
+  },
+  "home": {
+    "categories_title": "Safety Equipment",
+    "categories_subtitle": "Everything you need to be prepared",
+    "education_title": "Education & Preparation",
+    "education_subtitle": "Going into the backcountry isn't leaving the real world, it's entering it.",
+    "education_cta": "View safety guides",
+    "featured_title": "Featured Products"
+  },
+  "products": {
+    "title": "Products",
+    "filter_all": "All",
+    "sort_price_asc": "Price: low to high",
+    "sort_price_desc": "Price: high to low",
+    "add_to_cart": "Add to cart",
+    "out_of_stock": "Out of stock",
+    "in_stock": "In stock",
+    "search_placeholder": "Search products..."
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "empty_cta": "View products",
+    "subtotal": "Subtotal",
+    "whatsapp_cta": "Inquire via WhatsApp",
+    "whatsapp_message": "Hi! I'm interested in buying the following BCA Argentina products:",
+    "remove": "Remove",
+    "quantity": "Quantity"
+  },
+  "education": {
+    "title": "Safety Education",
+    "subtitle": "Prepare before heading into the backcountry"
+  },
+  "about": {
+    "title": "Backcountry Access Argentina",
+    "subtitle": "Leaders in backcountry safety since 1994",
+    "pillars": ["Function", "Trust", "Discipline"]
+  },
+  "footer": {
+    "tagline": "Promoting access and saving lives.",
+    "products": "Products",
+    "education": "Education",
+    "about": "About",
+    "contact": "Contact",
+    "newsletter_placeholder": "Your email",
+    "newsletter_cta": "Subscribe",
+    "rights": "All rights reserved"
+  }
+}

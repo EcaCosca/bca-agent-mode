@@ -1,0 +1,9 @@
+# Exclude large brand video (serve from CDN or YouTube embed instead)
+public/assets/videos/
+
+# Exclude large uncompressed sled photos (>15MB each)
+public/assets/images/sled/BCA_BB-714.jpg
+public/assets/images/sled/BCA_BB-1005.jpg
+public/assets/images/sled/BCA_BB-449.jpg
+public/assets/images/sled/BCA_BB-544.jpg
+public/assets/images/sled/BCA_BB-818.jpg

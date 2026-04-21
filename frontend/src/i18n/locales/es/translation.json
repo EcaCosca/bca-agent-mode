@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "products": "Productos",
+    "categories": "Categorías",
+    "education": "Educación",
+    "about": "Nosotros",
+    "cart": "Carrito"
+  },
+  "hero": {
+    "tagline": "El nombre más confiable en seguridad para el backcountry.",
+    "cta_primary": "Ver Productos",
+    "cta_secondary": "Aprender más"
+  },
+  "home": {
+    "categories_title": "Equipamiento de Seguridad",
+    "categories_subtitle": "Todo lo que necesitás para estar preparado",
+    "education_title": "Educación y Preparación",
+    "education_subtitle": "Ir al backcountry no es salir del mundo real, es entrar en él.",
+    "education_cta": "Ver guías de seguridad",
+    "featured_title": "Productos Destacados"
+  },
+  "products": {
+    "title": "Productos",
+    "filter_all": "Todos",
+    "sort_price_asc": "Precio: menor a mayor",
+    "sort_price_desc": "Precio: mayor a menor",
+    "add_to_cart": "Agregar al carrito",
+    "out_of_stock": "Sin stock",
+    "in_stock": "Disponible",
+    "search_placeholder": "Buscar productos..."
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío",
+    "empty_cta": "Ver productos",
+    "subtotal": "Subtotal",
+    "whatsapp_cta": "Consultar por WhatsApp",
+    "whatsapp_message": "Hola! Me interesa comprar los siguientes productos de BCA Argentina:",
+    "remove": "Eliminar",
+    "quantity": "Cantidad"
+  },
+  "education": {
+    "title": "Educación en Seguridad",
+    "subtitle": "Preparate antes de salir al backcountry"
+  },
+  "about": {
+    "title": "Backcountry Access Argentina",
+    "subtitle": "Líderes en seguridad para el backcountry desde 1994",
+    "pillars": ["Función", "Confianza", "Disciplina"]
+  },
+  "footer": {
+    "tagline": "Promoviendo el acceso y salvando vidas.",
+    "products": "Productos",
+    "education": "Educación",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "newsletter_placeholder": "Tu email",
+    "newsletter_cta": "Suscribirse",
+    "rights": "Todos los derechos reservados"
+  }
+}
