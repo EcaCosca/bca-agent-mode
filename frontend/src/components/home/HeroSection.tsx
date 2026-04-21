@@ -12,7 +12,7 @@ export default function HeroSection() {
         muted
         loop
         playsInline
-        src="/assets/videos/brand-hero.mp4"
+        src="https://cdn.static.amplience.net/k2skis/_vid/bca_2526_homepage-header-banner_float-e2-mtnpro-vest_1/f465d804-8217-4414-b7e6-ffab3c4841bd/video/4c3af87e-e56a-4ced-b953-f00517a40d1b.webm"
       />
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 h-full">
