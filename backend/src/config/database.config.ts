@@ -5,7 +5,7 @@ import { EducationPost } from '../education/education-post.entity'
 
 export const databaseConfig: TypeOrmModuleOptions = {
   type: 'better-sqlite3',
-  database: 'bca-argentina.db',
+  database: process.env.NODE_ENV === 'production' ? '/tmp/bca-argentina.db' : 'bca-argentina.db',
   entities: [Product, Category, EducationPost],
-  synchronize: process.env.NODE_ENV !== 'production',
+  synchronize: true,
 }
