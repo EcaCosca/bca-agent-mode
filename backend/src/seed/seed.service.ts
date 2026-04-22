@@ -1,7 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common'
+import { InjectRepository } from '@nestjs/typeorm'
+import { Repository } from 'typeorm'
 import { CategoriesService } from '../categories/categories.service'
 import { ProductsService } from '../products/products.service'
 import { EducationService } from '../education/education.service'
+import { User } from '../auth/user.entity'
+import * as bcrypt from 'bcrypt'
 
 @Injectable()
 export class SeedService {
@@ -11,9 +15,13 @@ export class SeedService {
     private readonly categoriesService: CategoriesService,
     private readonly productsService: ProductsService,
     private readonly educationService: EducationService,
+    @InjectRepository(User)
+    private readonly userRepo: Repository<User>,
   ) {}
 
   async seed() {
+    await this.seedUsers()
+
     const count = await this.categoriesService.count()
     if (count > 0) {
       this.logger.log('Database already seeded, skipping.')
@@ -169,5 +177,24 @@ export class SeedService {
     }
     this.logger.log(`Seeded ${educationPosts.length} education posts.`)
     this.logger.log('Database seeding complete.')
+
+    await this.seedUsers()
+  }
+
+  async seedUsers() {
+    const count = await this.userRepo.count()
+    if (count > 0) {
+      this.logger.log('Admin users already seeded, skipping.')
+      return
+    }
+    const users = [
+      { username: 'nacho', password: '420' },
+      { username: 'eca', password: '270' },
+    ]
+    for (const u of users) {
+      const passwordHash = await bcrypt.hash(u.password, 10)
+      await this.userRepo.save(this.userRepo.create({ username: u.username, passwordHash, role: 'admin' }))
+    }
+    this.logger.log('Admin users seeded: nacho, eca')
   }
 }

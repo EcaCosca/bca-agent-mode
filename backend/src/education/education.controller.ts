@@ -7,10 +7,12 @@ import {
   Param,
   Body,
   ParseIntPipe,
+  UseGuards,
 } from '@nestjs/common'
 import { EducationService } from './education.service'
 import { CreateEducationPostDto } from './dto/create-education-post.dto'
 import { UpdateEducationPostDto } from './dto/update-education-post.dto'
+import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 
 @Controller('education')
 export class EducationController {
@@ -26,16 +28,19 @@ export class EducationController {
     return this.educationService.findOne(slug)
   }
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   create(@Body() dto: CreateEducationPostDto) {
     return this.educationService.create(dto)
   }
 
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   update(@Param('id', ParseIntPipe) id: number, @Body() dto: UpdateEducationPostDto) {
     return this.educationService.update(id, dto)
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   remove(@Param('id', ParseIntPipe) id: number) {
     return this.educationService.remove(id)

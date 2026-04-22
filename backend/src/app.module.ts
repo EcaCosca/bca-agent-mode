@@ -9,6 +9,7 @@ import { CategoriesModule } from './categories/categories.module'
 import { EducationModule } from './education/education.module'
 import { SeedModule } from './seed/seed.module'
 import { SeedService } from './seed/seed.service'
+import { AuthModule } from './auth/auth.module'
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { SeedService } from './seed/seed.service'
     CategoriesModule,
     EducationModule,
     SeedModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
